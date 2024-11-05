@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import { DotButton, useDotButton } from "./ActivityCardDotButton";
+import { DotButton, useDotButton } from "./ServiceCardDotButton";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
-const ActivityCard = (props) => {
+const ServiceCard = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
@@ -25,12 +25,12 @@ const ActivityCard = (props) => {
   );
 
   return (
-    <section className="activity">
-      <div className="activity__viewport" ref={emblaRef}>
-        <div className="activity__container">
+    <section className="service">
+      <div className="service__viewport" ref={emblaRef}>
+        <div className="service__container">
           {slides.map((item, index) => (
-            <div className="activity__slide" key={index}>
-              <div className="activity__slide__number">
+            <div className="service__slide" key={index}>
+              <div className="service__slide__number">
                 <img src={item.url} alt="" className="rounded-3xl" />
                 <p className="text-xl poppins-medium mt-5">{item.title}</p>
               </div>
@@ -39,14 +39,14 @@ const ActivityCard = (props) => {
         </div>
       </div>
 
-      <div className="activity__controls">
-        <div className="activity__dots">
+      <div className="service__controls">
+        <div className="service__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={"activity__dot".concat(
-                index === selectedIndex ? " activity__dot--selected" : ""
+              className={"service__dot".concat(
+                index === selectedIndex ? " service__dot--selected" : ""
               )}
             />
           ))}
@@ -56,4 +56,4 @@ const ActivityCard = (props) => {
   );
 };
 
-export default ActivityCard;
+export default ServiceCard;

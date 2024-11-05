@@ -1,32 +1,32 @@
-.Activity-title {
+.Service-title {
   background: linear-gradient(90deg, #004b74 0%, #41c9e2 71%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.activity {
+.service {
   max-width: 80rem;
   margin: auto;
   --slide-height: 23rem;
   --slide-spacing: 1rem;
   --slide-size: 33%;
 }
-.activity__viewport {
+.service__viewport {
   overflow: hidden;
 }
-.activity__container {
+.service__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
 }
-.activity__slide {
+.service__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
-.activity__slide__number {
+.service__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
   font-size: 4rem;
@@ -38,21 +38,21 @@
   height: var(--slide-height);
   user-select: none;
 }
-.activity__controls {
+.service__controls {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
   gap: 1.2rem;
 }
-.activity__dots {
+.service__dots {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
 }
-.activity__dot {
+.service__dot {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
   appearance: none;
@@ -71,7 +71,7 @@
   justify-content: center;
   border-radius: 50%;
 }
-.activity__dot:after {
+.service__dot:after {
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
   background-color: #ccc; /* Tambahkan warna latar agar lebih jelas */
   width: 0.5rem;
@@ -81,7 +81,7 @@
   align-items: center;
   content: "";
 }
-.activity__dot--selected:after {
+.service__dot--selected:after {
   box-shadow: inset 0 0 0 0.2rem #555; /* Ubah ke warna yang lebih kontras */
   background-color: #333; /* Tambahkan warna latar untuk yang terpilih */
   transition: background-color 0.3s, box-shadow 0.3s;
