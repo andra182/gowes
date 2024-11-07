@@ -17,19 +17,19 @@ function App() {
       <div className="Navbar fixed w-screen z-50">
         <Navbar />
       </div>
-      <div className="Hero mb-20">
+      <div className="Hero mb-20" id="Home">
         <Hero />
       </div>
-      <div className="About">
+      <div className="About" id="About">
         <About />
       </div>
-      <div className="Activity mt-[60rem] z-0">
+      <div className="Activity mt-[60rem] z-0" id="Activity">
         <Activity />
       </div>
-      <div className="Service mt-20 z-0">
+      <div className="Service mt-20 z-0" id="Service">
         <Service />
       </div>
-      <div className="Footer">
+      <div className="Footer" id="Footer">
         <Footer />
       </div>
     </div>

@@ -17,13 +17,13 @@ const Navbar = () => {
             <a href="#" className="nav-link">
               Home
             </a>
-            <a href="#" className="nav-link">
+            <a href="#About" className="nav-link">
               About Us
             </a>
-            <a href="#" className="nav-link">
+            <a href="#Activity" className="nav-link">
               Activity
             </a>
-            <a href="#" className="nav-link">
+            <a href="#Service" className="nav-link">
               Service
             </a>
             <a href="#" className="nav-link">
@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="flex gap-4">
-            <a href="#">
+            <a href="https://www.instagram.com/mutii_rii/profilecard/?igsh=azc3MnZoMWNkb205">
               <Icon icon="basil:instagram-solid" className="text-4xl" />
             </a>
             <a href="#">
